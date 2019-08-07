@@ -5,7 +5,7 @@
 *
 * syntax: while ( the condition you want to sest for){// condition that needs to be true to keep iterating
 * Statment  // code that will execute as long as condition is true
-* n++ // here is the incrementos or decrementor
+* n++ // here is the incrementor or decrementor
 * The while loop is used in arrays and strings
 * }
 * 
@@ -17,11 +17,12 @@
 var salary = 50000;
 while( salary < 100000){
     console.log('Im not making  good money');
-    salary++;
+    salary++; // Here you have to increment inside the body of the loop because if its out side of the scope the loop it wont have
+    // access to it and salary will never reach 100000 and ill be a an infinite.
 }
 
 
-/* 2. for loop : creates a loop that consists of three optional expressions, enclosed in parentheses 
+/* 2. for loop : creates a loop that consists of three expressions, enclosed in parentheses 
 * and separated by semicolons, followed by a statement. This type of loop can be used 
 * in Arrays and strings.
 *
@@ -29,9 +30,12 @@ while( salary < 100000){
 *           statement
 *           }
 *       
-*   Initialization: is where you wan to the loop to start iterating from
-*   condition: determines for how long you want the reitertion to last.
+*   Initialization: is where you want to the loop to start iterating from
+*   condition: determines for how long you want the iteration to last.
 *   final expression: is either an incrementer of decrementer that directs to what direction to move from initialization;
+    it is also  changes after every loop and is what makes the loop move.
+
+
 */
 //Example
 

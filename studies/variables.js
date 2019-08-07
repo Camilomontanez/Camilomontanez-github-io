@@ -57,9 +57,35 @@ const avion = 'reno 4';
 * they are inside a block of code.
 * variables hoiste only their name.
 * functions hoiste their name and body
-
-
-/*
  * 
  *
  */
+ 
+ // example: 
+ 
+ function boom(){
+  
+  function chat() {
+      return 'wohooo';
+  }
+  return chat();
+  function chat() {
+      return 'better wohooo';
+  }
+}
+
+console.log(boom());
+ 
+ // hoisted as the first pass and how computer would oorganize information from fuction above
+ 
+  function boom(){
+  function chat() {
+      return 'wohooo';
+  }
+  function chat() {// function gets hoisted to the top of its scope
+      return 'better wohooo';
+  }
+  return chat();
+}
+
+console.log(boom());

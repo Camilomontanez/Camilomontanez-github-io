@@ -37,12 +37,15 @@
  var BooleanCanBeFalse = false; 
 
 //1.4 UNDEFINED:`Argumments that do not have a defined or initilized value.Its not an object and it has no mehtods.`
+//               variables that are not assigned a value are also undefined, or accessing objects/arrays at a position 
+//               that doesn't exist also comes back as undefined. Functions that not not have a return value also evaluate
+//               to undefined.
 //Example:
   function noReturnStamentReturnsUndefined(a,b){
-      a+b
+      a+b;
   }
   
-  console.log(noReturnStamentReturnsUndefined(10,12))//return undefined because function is not defined by return statment.
+  console.log(noReturnStamentReturnsUndefined(10,12));//return undefined because the function does not return anything.
 
 //1.5 NULL: is a value that has intentionally being defined as none existent.
 let allowThisVariableToBeNull = null;
@@ -64,7 +67,7 @@ console.log(999999999999999999999**100);// prints infinity
 //2.COMPLEX DATA CATAGORY: can hold or collect other values, including other Arrays.
 
 /*Arrays: is a collections that holds different types of data and hold the data in
-*places cold indexes. I other words it stores a list of different types of data values 
+*places called indexes. I other words it stores a list of different types of data values 
 *as list as ONE (in a zero indexed list).
 */
 //Example: var array1 =["index0", "index1","index2"];
@@ -122,6 +125,14 @@ multipleKeyValuePairsAndDifferentDataTypes['wanttobe'] ='firefighter';//it adds 
 
 // FUNCTIONS - is a set of instructions that we are able to to call upon when needed. Is a complex data type
 //EXAMPLE AND DEFFINITION WIL LBE FOUND IN LATER FUNCTION SECTION
+
+//Example:
+  function reversa(string){
+    return  string.split("").reverse().join("");
+  }
+  
+  reversa('camilo');
+
 
 //What is the difference between primitive/simple and complex data types?
 //Simple data types can only hold one value and are copied by value, they are also inmutable

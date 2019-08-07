@@ -42,11 +42,11 @@
 
 //Example 
 
-var somefunc = function printSomething(value){
+var printSomething = function (value){
      console.log (value);
  };
 
- somefunc('someother thing');// you can make the function call by using the variable name and the arguments
+printSomething('someother thing');// you can make the function call by using the variable name and the arguments
  
  /* 4. Functions can OPTIONALLY take inputs, and OPTIONALLY return a single value. 
 *   How do we specify inputs, and how do we specify outputs?
@@ -75,7 +75,12 @@ function exampleFunction() {
 console.log(x);// it can access value of varaible x because it is on the global scope, it does not refer to the x inside the function
 
 /* Clousures: are function within functions. Closures can be identified if they fulfill two characteristics:
-*  1. A function must have access to the parent scope
-*  2. A function using variabes form a parent scope
+*  1. A function must have access to the parent scope even after parent fucntion has returned.
+*  2. A function using variabes from a parent scope
+
+//What does that mean  when a function creates a closure around a variable or a parameter/argument?
+ it means that varaible has a private scope that can only be accessed by an inner function/closure. This helps to decrease 
+ the probability that someone can change a variable we want to keep untoched and the only way it can be accessed is inderectly.
+
 */
 

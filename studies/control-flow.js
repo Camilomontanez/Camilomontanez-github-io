@@ -8,7 +8,8 @@
 *
 */
 
-/*1. 'if' - We use 'if' to start a conditional statement and as long as the condition inside is met thereforegiving us back the boolean of true, and action will be executed 
+/*1. 'if' - We use 'if' to start a conditional statement and as long as the condition inside is met thereforegiving
+*   us back the boolean of true, and action will be executed 
 *
 *
 *         Syntax:    if (condition) {
