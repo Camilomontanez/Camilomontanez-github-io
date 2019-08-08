@@ -84,3 +84,22 @@ console.log(x);// it can access value of varaible x because it is on the global 
 
 */
 
+// example:
+
+function closureExp (){
+  let name = 'camilo'; // why is this not defined
+  
+  return function(lastName){
+   
+   return ` My name is ${name} ${lastName}`
+  }
+ 
+}
+
+closureExp()();
+
+ var g = closureExp(); 
+
+  g('montanez');
+  
+  

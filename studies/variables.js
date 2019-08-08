@@ -63,29 +63,6 @@ const avion = 'reno 4';
  
  // example: 
  
- function boom(){
-  
-  function chat() {
-      return 'wohooo';
-  }
-  return chat();
-  function chat() {
-      return 'better wohooo';
-  }
-}
-
-console.log(boom());
- 
- // hoisted as the first pass and how computer would oorganize information from fuction above
- 
-  function boom(){
-  function chat() {
-      return 'wohooo';
-  }
-  function chat() {// function gets hoisted to the top of its scope
-      return 'better wohooo';
-  }
-  return chat();
-}
-
-console.log(boom());
+console.log(x); // prints undefined (NOT ref error), because var x, is hoisted to the top of the scope
+var x = 200; // the declaration that var x exists is hoisted to top but x = 200 is not hoisted
+console.log(x); // prints 200 because here the name and value are available 

@@ -152,7 +152,7 @@ typeof true// prints 'boolean'
 */
 //Example
  function diagnosis(sickness){
-     sickness === 'cancer'? 'die': 'live';
+    return sickness === 'cancer'? 'die': 'live';
  }
  
  console.log(diagnosis('cancer'));// prints  /die'
